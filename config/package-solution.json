@@ -1,0 +1,12 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "intranet-v-1-client-side-solution",
+    "id": "a5609bae-45c9-45f5-b749-b1e2c6e5bdd3",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true
+  },
+  "paths": {
+    "zippedPackage": "solution/intranet-v-1.sppkg"
+  }
+}

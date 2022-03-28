@@ -1,0 +1,11 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "isCreatingSolution": true,
+    "environment": "onprem19",
+    "version": "1.12.1",
+    "libraryName": "intranet-v-1",
+    "libraryId": "a5609bae-45c9-45f5-b749-b1e2c6e5bdd3",
+    "packageManager": "npm",
+    "componentType": "webpart"
+  }
+}
