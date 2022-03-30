@@ -47,7 +47,7 @@ export default class IntranetV1 extends React.Component<IIntranetV1Props, dynmic
             <div className={'col-12 col-md-4'}>
               <div className={'mt-5 pe-5'}>
                 <div className={'pt-l-5 bg-top text-white text-center'}>
-                  <p style={{ 'font-size': '36px', 'font-weight': 'bold' }}>NEWS</p>
+                  <p style={{ 'font-size': '36px', 'font-weight': 'bold', 'margin-bottom': '30px' }}>NEWS</p>
                 </div>
               </div>
             </div>
