@@ -7,6 +7,7 @@ import { boundMethod } from 'autobind-decorator';
 import { SPHttpClientResponse } from '@microsoft/sp-http';
 require('../../assets/css/stylec.css');
 const right_arrow: any = require('../../assets/images/right-arrow.png');
+const logo: any = require('../../assets/images/logo.png');
 export default class IntranetV1 extends React.Component<IIntranetV1Props, dynmiclinks> {
   private service: service;
   public constructor(props: IIntranetV1Props) {
@@ -36,6 +37,7 @@ export default class IntranetV1 extends React.Component<IIntranetV1Props, dynmic
           <div className={'row'}>
             <div className={'col-12 col-md-4'}>
               <div className={'ps-5 mt-5 pt-5'}>
+              <div className={'ps-5 mt-5'}> <img src={logo} />
                 <div className={'mt-5'}>
                   <h1 className={'text-white'}>PTI STANDARDS</h1>
                   <h1 className={'text-white'}></h1>
@@ -47,7 +49,7 @@ export default class IntranetV1 extends React.Component<IIntranetV1Props, dynmic
             <div className={'col-12 col-md-4'}>
               <div className={'mt-5 pe-5'}>
                 <div className={'pt-l-5 bg-top text-white text-center'}>
-                  <p style={{ 'font-size': '36px', 'font-weight': 'bold', 'margin-bottom': '30px' }}>NEWS</p>
+                  <a href='https://swiftinit.sharepoint.com/sites/PTISite/SitePages/News.aspx'><p style={{ 'font-size': '36px', 'font-weight': 'bold', 'margin-bottom': '30px' }}>NEWS</p></a>
                 </div>
               </div>
             </div>
@@ -92,6 +94,7 @@ export default class IntranetV1 extends React.Component<IIntranetV1Props, dynmic
             </div>
           </div>
         </div>
+      </div>
       </div>
     );
   }
