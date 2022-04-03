@@ -6,8 +6,8 @@ import { escape } from '@microsoft/sp-lodash-subset';
 import { boundMethod } from 'autobind-decorator';
 import { SPHttpClientResponse } from '@microsoft/sp-http';
 require('../../assets/css/stylec.css');
-const right_arrow: any = require('../../assets/images/right-arrow.png');
 const logo: any = require('../../assets/images/logo.png');
+const right_arrow: any = require('../../assets/images/right-arrow.png');
 export default class IntranetV1 extends React.Component<IIntranetV1Props, dynmiclinks> {
   private service: service;
   public constructor(props: IIntranetV1Props) {
@@ -36,20 +36,20 @@ export default class IntranetV1 extends React.Component<IIntranetV1Props, dynmic
         <div className={'container-fluid'}>
           <div className={'row'}>
             <div className={'col-12 col-md-4'}>
-              <div className={'ps-5 mt-5 pt-5'}>
               <div className={'ps-5 mt-5'}> <img src={logo} />
-                <div className={'mt-5'}>
-                  <h1 className={'text-white'}>PTI STANDARDS</h1>
-                  <h1 className={'text-white'}></h1>
-                  <h6 className={'text-white mt-3'}>Work instructions, supporting documents</h6>
-                  <img className={'mt-3'} src={right_arrow} /> </div>
-              </div>
+                  <div className={'mt-5'}>
+                    <h1 className={'text-white'}>PTI STANDARDS</h1>
+                    <h6 className={'text-white mt-3'}>Work instructions, supporting documents</h6>
+                    <img className={'mt-3'} src={right_arrow} /> </div>
+                </div>
             </div>
             <div className={'col-12 col-md-4'}></div>
             <div className={'col-12 col-md-4'}>
               <div className={'mt-5 pe-5'}>
                 <div className={'pt-l-5 bg-top text-white text-center'}>
-                  <a href='https://swiftinit.sharepoint.com/sites/PTISite/SitePages/News.aspx'><p style={{ 'font-size': '36px', 'font-weight': 'bold', 'margin-bottom': '30px' }}>NEWS</p></a>
+                <a style={{'color':'white'}} 
+                href={this.props.context.pageContext.web.absoluteUrl+'/SitePages/News.aspx'}><p style={{ 'font-size': '36px', 'font-weight': 'bold', 'margin-bottom': '30px' }}>NEWS</p></a>
+                  <a style={{'color':'white'}} href='#'><p className={'mt-3'}>Data migration </p></a>
                 </div>
               </div>
             </div>
@@ -94,7 +94,6 @@ export default class IntranetV1 extends React.Component<IIntranetV1Props, dynmic
             </div>
           </div>
         </div>
-      </div>
       </div>
     );
   }
