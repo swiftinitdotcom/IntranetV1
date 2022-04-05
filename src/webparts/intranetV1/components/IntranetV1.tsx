@@ -23,6 +23,7 @@ export default class IntranetV1 extends React.Component<IIntranetV1Props, dynmic
         { title: '', links: '', sn: '', img: '' },
         { title: '', links: '', sn: '', img: '' },
         { title: '', links: '', sn: '', img: '' },
+        { title: '', links: '', sn: '', img: '' },
         { title: '', links: '', sn: '', img: '' }
       ]
     };
@@ -37,20 +38,23 @@ export default class IntranetV1 extends React.Component<IIntranetV1Props, dynmic
           <div className={'row'}>
             <div className={'col-12 col-md-4'}>
               <div className={'ps-5 mt-5'}> <img src={logo} />
-                  <div className={'mt-5'}>
-                    <h1 className={'text-white'}>PTI STANDARDS</h1>
-                    <h6 className={'text-white mt-3'}>Work instructions, supporting documents</h6>
-                    <img className={'mt-3'} src={right_arrow} /> </div>
-                </div>
+                <div className={'mt-5'}>
+                  <h1 className={'text-white'}>PTI STANDARDS</h1>
+                  <h6 className={'text-white mt-3'}>Work instructions, supporting documents</h6>
+                  <img className={'mt-3'} src={right_arrow} /> </div>
+              </div>
             </div>
             <div className={'col-12 col-md-4'}></div>
             <div className={'col-12 col-md-4'}>
               <div className={'mt-5 pe-5'}>
                 <div className={'pt-l-5 bg-top text-white text-center'}>
-                <a style={{'color':'white'}} 
-                href={this.state.config[0].links}>
-                  <p style={{'margin-bottom': '30px' }}>{this.state.config[0].title}</p></a>
-                  <a style={{'color':'white'}} href={this.state.config[1].links}><p className={'mt-3'}>{this.state.config[1].title}</p></a>
+                  <a style={{ 'color': 'white' }}
+                    href={this.state.config[0].links}>
+                    <p style={{ 'margin-bottom': '30px' }}>{this.state.config[0].title}</p></a>
+                  <a style={{ 'color': 'white' }}
+                    href={this.state.config[1].links}>
+                    <p style={{ 'margin-bottom': '30px' }}>{this.state.config[1].title}</p></a>
+                  <a style={{ 'color': 'white' }} href={this.state.config[2].links}><p className={'mt-3'}>{this.state.config[2].title}</p></a>
                 </div>
               </div>
             </div>
@@ -62,10 +66,6 @@ export default class IntranetV1 extends React.Component<IIntranetV1Props, dynmic
             <div className={'row'}>
               <div className={'col-12'}>
                 <ul className={'list-inline text-white text-center m-0 pt-5 pb-5'}>
-                  <li className={'list-inline-item'}><a href={this.state.config[2].links}>
-                    <img src={this.state.config[2].img} /></a><br />
-                    <h5 className={'mt-3'}>{this.state.config[2].title}</h5>
-                  </li>
                   <li className={'list-inline-item'}><a href={this.state.config[3].links}>
                     <img src={this.state.config[3].img} /></a><br />
                     <h5 className={'mt-3'}>{this.state.config[3].title}</h5>
@@ -89,6 +89,10 @@ export default class IntranetV1 extends React.Component<IIntranetV1Props, dynmic
                   <li className={'list-inline-item'}><a href={this.state.config[8].links}>
                     <img src={this.state.config[8].img} /></a><br />
                     <h5 className={'mt-3'}>{this.state.config[8].title}</h5>
+                  </li>
+                  <li className={'list-inline-item'}><a href={this.state.config[9].links}>
+                    <img src={this.state.config[9].img} /></a><br />
+                    <h5 className={'mt-3'}>{this.state.config[9].title}</h5>
                   </li>
                 </ul>
               </div>
