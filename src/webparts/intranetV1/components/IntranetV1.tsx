@@ -102,7 +102,7 @@ export default class IntranetV1 extends React.Component<IIntranetV1Props, dynmic
   private _bindlinks(): void {
     const listname: string = this.props.description//'Config';
     const columns: string = 'Id,Title,Header,Links,SN,Imgpath';
-    this.service.getListItem('', listname, '', columns, '', '', '')
+    this.service.getListItem('', listname, '', columns, '', '', 'SN asc')
       .then((response: SPHttpClientResponse) => {
         response.json().then((data: any) => {
           console.log(data);
